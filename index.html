@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+    <!-- Water For Fire - Feb 2018 - Peter G Bowers -->
+
+<head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Water For Fire</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <!-- the onfocus control clears the field when clicked -->
+        <input id="emergLoc-input" class="controls" type="text" placeholder="Enter Location of Emergency" autofocus = "true" onfocus = "this.value=''">
+    </div>
+
+    <!-- the driving distance container -->
+    <div id="dist"></div>
+
+    <!-- the map container -->
+    <div id="mapDiv"></div>
+
+    <!-- the street view container -->
+     <div id="pano"></div>
+
+    <script src="script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1yJE980S7p3ejJvMEkjOFMlle3vWzB48&libraries=geometry,places&callback=initMap" async defer></script>
+
+</body>
+
+</html>
